@@ -19,7 +19,7 @@ export default function MarketOpportunity() {
       </FadeIn>
       <div className="market-content">
         <FadeIn delay={100}>
-          <span className="market-big-number cinzel" data-text="PKR 200B+">
+          <span className="market-big-number cinzel" data-text="PKR 523B+">
             PKR 200B+
           </span>
         </FadeIn>
