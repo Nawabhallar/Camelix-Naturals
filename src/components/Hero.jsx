@@ -1,11 +1,16 @@
-import landingBg from "../assets/landing2.png";
+import { useTheme } from "../context/ThemeContext";
+import landingBgDark from "../assets/landing2.png";
+import landingBgLight from "../assets/landing2-day.png";
 
 export default function Hero({ scrollTo }) {
+  const { theme } = useTheme();
+  const landingBg = theme === "light" ? landingBgLight : landingBgDark;
+
   return (
     <section
       className="hero"
       style={{
-        backgroundImage: `linear-gradient(180deg, rgba(5,2,0,0.55) 0%, rgba(26,15,0,0.7) 100%), url(${landingBg})`,
+        backgroundImage: `linear-gradient(180deg, var(--hero-overlay-start) 0%, var(--hero-overlay-end) 100%), url(${landingBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

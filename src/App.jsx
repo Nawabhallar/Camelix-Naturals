@@ -1,7 +1,12 @@
+import { ThemeProvider } from "./context/ThemeContext";
 import CamelMilkLanding from "./CamelMilkLanding";
 
 function App() {
-  return <CamelMilkLanding />;
+  return (
+    <ThemeProvider>
+      <CamelMilkLanding />
+    </ThemeProvider>
+  );
 }
 
 export default App;

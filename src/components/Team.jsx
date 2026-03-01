@@ -43,10 +43,6 @@ export default function Team() {
   return (
     <section
       id="team"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(180deg, #1a0f00, #0a0500)",
-      }}
     >
       <FadeIn>
         <div className="section-label">The People</div>
@@ -78,7 +74,7 @@ export default function Team() {
               {m.email && (
                 <div style={{
                   fontSize: "0.72rem",
-                  color: "rgba(193,154,107,0.6)",
+                  color: "var(--text-muted)",
                   marginTop: "0.6rem",
                   fontWeight: 300,
                   wordBreak: "break-all",
@@ -89,7 +85,7 @@ export default function Team() {
               {m.phone && (
                 <div style={{
                   fontSize: "0.72rem",
-                  color: "rgba(193,154,107,0.5)",
+                  color: "var(--text-muted)",
                   marginTop: "0.3rem",
                   fontWeight: 300,
                 }}>

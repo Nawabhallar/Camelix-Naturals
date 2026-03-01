@@ -4,12 +4,6 @@ export default function MarketOpportunity() {
   return (
     <section
       id="market"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(180deg, #1a0f00, #0f0800)",
-        position: "relative",
-        overflow: "hidden",
-      }}
     >
       <div className="market-orb" />
       <FadeIn>

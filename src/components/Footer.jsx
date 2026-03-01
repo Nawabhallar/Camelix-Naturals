@@ -22,7 +22,7 @@ export default function Footer() {
         style={{
           marginTop: "2rem",
           fontSize: "0.72rem",
-          color: "rgba(193,154,107,0.3)",
+          color: "var(--text-faintest)",
           letterSpacing: "0.1em",
         }}
       >

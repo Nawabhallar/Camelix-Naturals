@@ -22,10 +22,6 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(180deg, #0a0500, #1a0f00)",
-      }}
     >
       <FadeIn>
         <div className="section-label">Get In Touch</div>
@@ -54,16 +50,16 @@ export default function Contact() {
             }}
           >
             {[
-              { label: "Email", value: "pirzadasher63@gmail.com", icon: "✉" },
-              { label: "Location", value: "Sindh, Pakistan", icon: "📍" },
-              { label: "Phone", value: "0321-3048916", icon: "📞" },
+              { label: "Email", value: "pirzadasher63@gmail.com", icon: "\u2709" },
+              { label: "Location", value: "Sindh, Pakistan", icon: "\uD83D\uDCCD" },
+              { label: "Phone", value: "0321-3048916", icon: "\uD83D\uDCDE" },
             ].map((item) => (
               <div
                 key={item.label}
                 style={{
                   padding: "24px 16px",
-                  background: "rgba(193,154,107,0.04)",
-                  border: "1px solid rgba(193,154,107,0.12)",
+                  background: "var(--surface)",
+                  border: "1px solid var(--border-subtle)",
                   textAlign: "center",
                   transition: "all 0.3s",
                 }}
@@ -91,7 +87,7 @@ export default function Contact() {
                 <div
                   style={{
                     fontSize: "0.75rem",
-                    color: "rgba(193,154,107,0.6)",
+                    color: "var(--text-muted)",
                     fontWeight: 300,
                   }}
                 >
@@ -106,8 +102,8 @@ export default function Contact() {
             <div
               style={{
                 padding: "40px",
-                background: "rgba(212,160,23,0.08)",
-                border: "1px solid rgba(212,160,23,0.3)",
+                background: "var(--surface-gold)",
+                border: "1px solid var(--border-gold)",
                 textAlign: "center",
               }}
             >
@@ -133,7 +129,7 @@ export default function Contact() {
               <p
                 style={{
                   fontSize: "0.85rem",
-                  color: "rgba(232,201,138,0.7)",
+                  color: "var(--text-body)",
                   fontWeight: 300,
                 }}
               >
@@ -163,24 +159,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  style={{
-                    padding: "14px 18px",
-                    background: "rgba(193,154,107,0.06)",
-                    border: "1px solid rgba(193,154,107,0.2)",
-                    color: "var(--cream)",
-                    fontFamily: "'Lato', sans-serif",
-                    fontSize: "0.9rem",
-                    fontWeight: 300,
-                    outline: "none",
-                    transition: "border-color 0.3s",
-                    borderRadius: 0,
-                  }}
-                  onFocus={(e) =>
-                    (e.target.style.borderColor = "rgba(212,160,23,0.5)")
-                  }
-                  onBlur={(e) =>
-                    (e.target.style.borderColor = "rgba(193,154,107,0.2)")
-                  }
+                  className="contact-input"
                 />
                 <input
                   type="email"
@@ -189,24 +168,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  style={{
-                    padding: "14px 18px",
-                    background: "rgba(193,154,107,0.06)",
-                    border: "1px solid rgba(193,154,107,0.2)",
-                    color: "var(--cream)",
-                    fontFamily: "'Lato', sans-serif",
-                    fontSize: "0.9rem",
-                    fontWeight: 300,
-                    outline: "none",
-                    transition: "border-color 0.3s",
-                    borderRadius: 0,
-                  }}
-                  onFocus={(e) =>
-                    (e.target.style.borderColor = "rgba(212,160,23,0.5)")
-                  }
-                  onBlur={(e) =>
-                    (e.target.style.borderColor = "rgba(193,154,107,0.2)")
-                  }
+                  className="contact-input"
                 />
                 <textarea
                   name="message"
@@ -215,25 +177,8 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  style={{
-                    padding: "14px 18px",
-                    background: "rgba(193,154,107,0.06)",
-                    border: "1px solid rgba(193,154,107,0.2)",
-                    color: "var(--cream)",
-                    fontFamily: "'Lato', sans-serif",
-                    fontSize: "0.9rem",
-                    fontWeight: 300,
-                    outline: "none",
-                    resize: "vertical",
-                    transition: "border-color 0.3s",
-                    borderRadius: 0,
-                  }}
-                  onFocus={(e) =>
-                    (e.target.style.borderColor = "rgba(212,160,23,0.5)")
-                  }
-                  onBlur={(e) =>
-                    (e.target.style.borderColor = "rgba(193,154,107,0.2)")
-                  }
+                  className="contact-input"
+                  style={{ resize: "vertical" }}
                 />
                 <button
                   type="submit"

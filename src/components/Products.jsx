@@ -24,10 +24,6 @@ export default function Products() {
   return (
     <section
       id="products"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(180deg, #230e00, #1a0f00)",
-      }}
     >
       <FadeIn>
         <div className="section-label">Our Portfolio</div>

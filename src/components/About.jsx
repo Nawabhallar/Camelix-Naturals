@@ -4,10 +4,6 @@ export default function About() {
   return (
     <section
       id="about"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(180deg, #0f0800, #1a0f00)",
-      }}
     >
       <FadeIn>
         <div className="section-label">Our Story</div>

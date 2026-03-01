@@ -7,6 +7,12 @@
     <title>CAMELIX</title>
   </head>
   <body>
+    <script>
+      (function() {
+        var t = localStorage.getItem('camelix-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

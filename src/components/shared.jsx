@@ -13,6 +13,19 @@ export const SAND_PALETTE = {
   rust: "#8b3a0f",
 };
 
+export const LIGHT_PALETTE = {
+  deep: "#faf6f0",
+  dark: "#f0e6d6",
+  brown: "#8b6914",
+  camel: "#6b4a2e",
+  sand: "#38200a",
+  gold: "#b8860b",
+  cream: "#2d1a00",
+  white: "#1a0f00",
+  accent: "#9a7209",
+  rust: "#b83a1a",
+};
+
 export function useIntersect(threshold = 0.15) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);

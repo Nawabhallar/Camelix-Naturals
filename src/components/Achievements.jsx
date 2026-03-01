@@ -14,11 +14,6 @@ export default function Achievements() {
   return (
     <section
       id="achievements"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(135deg, #1a0f00, #2a1500, #1a0f00)",
-        textAlign: "center",
-      }}
     >
       <FadeIn>
         <div className="section-label">Recognition</div>
@@ -46,7 +41,7 @@ export default function Achievements() {
                 width: "100%",
                 height: "300px",
                 objectFit: "cover",
-                border: "1px solid rgba(212,160,23,0.25)",
+                border: "1px solid var(--border-gold)",
                 cursor: "pointer",
               }}
               onClick={() => setLightboxIdx(i)}

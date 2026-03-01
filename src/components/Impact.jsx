@@ -32,10 +32,6 @@ export default function Impact() {
   return (
     <section
       id="impact"
-      style={{
-        padding: "100px 5%",
-        background: "linear-gradient(180deg, #0f0800, #1a0f00)",
-      }}
     >
       <FadeIn>
         <div className="section-label">Social Impact</div>
